@@ -9,14 +9,17 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { SuccessAlertComponent } from './SucessAlert/successAlert.component';
 import { WarningAlertComponent } from './WarningAlert/warningAlert.component';
+import { AssignmentComponent } from './assignment/assignment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AssignmentComponent,
     ServerComponent,
     ServersComponent,
     SuccessAlertComponent,
-    WarningAlertComponent
+    WarningAlertComponent,
+    AssignmentComponent
   ],
   imports: [
     BrowserModule,

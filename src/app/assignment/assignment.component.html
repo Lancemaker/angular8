@@ -1,0 +1,12 @@
+<input
+type="text"
+name="formControl"
+[(ngModel)]= "username"
+>
+<p>{{username}}</p>
+<button
+  class="btn btn-primary"
+  [disabled]='formEmpty'
+
+  (click)="username=''"> Clear</button>
+<p>{{formEmpty}}</p>

@@ -9,7 +9,8 @@ export class AssignmentComponent {
   username = '';
   formEmpty = true;
 
-  onUpdateUsername(event: Event) {
-    this.username = (event.target as HTMLInputElement).value;
+  Clear() {
+    this.username = '';
+    this.formEmpty = true;
   }
 }

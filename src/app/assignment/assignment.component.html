@@ -1,3 +1,10 @@
+<!--
+You can literally use expressions on property binding like so :
+[disabled]="username === ''" this expression returns true only if username is a string and its a empty string.
+therefore chaning the state of the html button property.
+-->
+
+
 <input
 type="text"
 name="formControl"
@@ -6,7 +13,7 @@ name="formControl"
 <p>{{username}}</p>
 <button
   class="btn btn-primary"
-  [disabled]='formEmpty'
+  [disabled]="username === ''"
 
-  (click)="username=''"> Clear</button>
+  (click)="username=''"> Clear </button>
 <p>{{formEmpty}}</p>

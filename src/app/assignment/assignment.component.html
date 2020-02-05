@@ -4,7 +4,6 @@ You can literally use expressions on property binding like so :
 therefore chaning the state of the html button property.
 -->
 
-
 <input
 type="text"
 name="formControl"
@@ -14,6 +13,6 @@ name="formControl"
 <button
   class="btn btn-primary"
   [disabled]="username === ''"
-
   (click)="username=''"> Clear </button>
+
 <p>{{formEmpty}}</p>
